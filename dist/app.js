@@ -38,6 +38,46 @@ app.get('/books', async (req, res) => {
         }
     }
 });
+app.put('/updateBook/:id', async (req, res) => {
+    try {
+        const id = Number(req.params.id);
+        const result = await (0, bookService_1.updateBook)(id, req.body);
+        if (result) {
+            res.status(200).json(result);
+        }
+        else {
+            res.status(404).json({ message: 'Livre non trouvé.' });
+        }
+    }
+    catch (error) {
+        if (error instanceof Error) {
+            res.status(500).json({ message: error.message });
+        }
+        else {
+            res.status(500).json({ message: 'Une erreur inconnue s\'est produite.' });
+        }
+    }
+});
+app.delete('/deleteBook/:id', async (req, res) => {
+    try {
+        const id = Number(req.params.id);
+        const result = await (0, bookService_1.deleteBook)(id);
+        if (result) {
+            res.status(200).json({ message: 'Livre supprimé avec succès.' });
+        }
+        else {
+            res.status(404).json({ message: 'Livre non trouvé.' });
+        }
+    }
+    catch (error) {
+        if (error instanceof Error) {
+            res.status(500).json({ message: error.message });
+        }
+        else {
+            res.status(500).json({ message: 'Une erreur inconnue s\'est produite.' });
+        }
+    }
+});
 app.listen(port, () => {
     console.log(`Serveur démarré sur http://localhost:${port}`);
 });
