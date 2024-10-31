@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2017",                  // Mettez à jour la version cible à es2017 ou supérieur
+    "module": "NodeNext",                  // Changez de commonjs à esnext pour prendre en charge top-level await
+    "strict": true,                      // Activer le mode strict pour la sécurité du type
+    "outDir": "./dist",                  // Répertoire de sortie pour les fichiers compilés
+    "rootDir": "./src",                  // Répertoire source des fichiers .ts
+    "esModuleInterop": true,              // Permet l'interopérabilité avec les modules ES
+    "removeComments": true,
+    "noEmitOnError": true
+  },
+  "include": ["src/**/*.ts", "src/index.ts"],            // Inclure tous les fichiers .ts dans le répertoire src
+  "exclude": ["node_modules"]            // Exclure le dossier node_modules
+}

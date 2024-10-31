@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Couleur d'arrière-plan douce */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center; /* Centrer le titre */
+    color: #333; /* Couleur du texte du titre */
+}
+
+form {
+    background-color: #fff; /* Fond blanc pour le formulaire */
+    padding: 20px; /* Espacement interne */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-bottom: 20px; /* Espace en bas du formulaire */
+}
+
+input, select {
+    margin: 5px 0; /* Marges verticales */
+    padding: 10px; /* Espacement interne */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis */
+    width: calc(100% - 22px); /* Largeur responsive */
+}
+
+button {
+    padding: 10px 15px; /* Espacement interne */
+    background-color: #28a745; /* Couleur de fond verte */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointeur */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+button:hover {
+    background-color: #218838; /* Couleur plus foncée au survol */
+}
+
+table {
+    width: 100%; /* Largeur du tableau à 100% */
+    border-collapse: collapse; /* Fusionner les bordures */
+    margin-top: 20px; /* Espace au-dessus du tableau */
+}
+
+th, td {
+    padding: 12px; /* Espacement interne */
+    border: 1px solid #ddd; /* Bordure légère */
+    text-align: left; /* Alignement à gauche */
+}
+
+th {
+    background-color: #f2f2f2; /* Couleur de fond des en-têtes */
+    color: #333; /* Couleur du texte des en-têtes */
+}
+
+td {
+    background-color: #fff; /* Couleur de fond des cellules */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Couleur de fond au survol d'une ligne */
+}
